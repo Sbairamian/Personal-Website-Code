@@ -1,18 +1,140 @@
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+/* Apply consistent sizing to all elements */
+* {
+    box-sizing: border-box;
 }
 
+/* Main page */
 body {
-  background-color: lightblue;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
+    margin: 0;
+    background-color: #eef4f8;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333333;
 }
 
+/* Main headings */
+h1 {
+    color: #16324f;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #1f4e79;
+}
+
+h3 {
+    color: #2c5f87;
+}
+
+h4 {
+    color: #444444;
+}
+
+/* Paragraphs */
 p {
-  color: #333333;
+    color: #333333;
+}
+
+/* Profile image */
+.center {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Main content sections */
+section {
+    background-color: white;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Project cards */
+article {
+    background-color: #f8fafc;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #1f6feb;
+    border-radius: 8px;
+}
+
+/* Lists */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #004999;
+    text-decoration: underline;
+}
+
+/* Horizontal lines */
+hr {
+    max-width: 1000px;
+    margin: 30px auto;
+    border: none;
+    border-top: 1px solid #cccccc;
+}
+
+/* Footer */
+footer {
+    background-color: #16324f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: #9fd3ff;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .center {
+        max-width: 90%;
+    }
 }
